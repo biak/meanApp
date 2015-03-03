@@ -1,0 +1,31 @@
+<html >
+<head>
+<link href="css/semantic.css" rel="stylesheet"/>
+<script src="js/angular.min.js"></script>
+<script src="controllers/controller.js"></script></head>
+<body style="background-color:#70C772" ng-app="">
+<div style=" margin-left: auto; margin-right: auto; width: 50%; " ng-controller="demoCtrl">
+<h1>{{message}}</h1>
+<table class="ui collapsing table ui inverted table " >
+	<thead>
+		<tr>
+			<th>Name</th>
+		</tr>	
+		<tr>
+			<td><input  class="ui input" ng-model="client.name"/></td>
+			<td><button class="ui inverted green button" ng-click="add()">Add</button></td>
+			<td><button class="ui inverted blue button" ng-click="update()">Update</button></td>
+		</tr>
+	</thead>	
+	<tbody>
+		<tr ng-repeat = "client in clients">
+			<td>
+				{{client.name}}
+			</td>
+			<td><button class="ui inverted red button" ng-click="remove(client._id)">Delete</button></td>
+			<td><button class="ui inverted orange button" ng-click="select(client._id)">Select</button></td>
+	</tbody>
+</table>
+</div>
+</body>
+</html>

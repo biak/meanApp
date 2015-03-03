@@ -1,0 +1,29 @@
+{
+  "name": "meanApp",
+  "version": "1.0.0",
+  "description": "Mean App Cloud",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "mongojs": "^0.18.1",
+    "multer": "^0.1.7",
+    "node-twitter-api": "^1.5.0",
+    "twit": "^1.1.19",
+    "twitter": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biak/meanApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biak/meanApp/issues"
+  },
+  "homepage": "https://github.com/biak/meanApp"
+}
