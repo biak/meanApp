@@ -5,7 +5,9 @@ var bodyParser = require('body-parser');
 var multer = require('multer'); 
 var mongojs = require("mongojs");
 
-var db = mongojs("demodb",["clientTable"]);
+var databaseUrl = "mongodb://biak:biak123@ds061558.mongolab.com:61558/clienttable";
+var collections = ["clientTable"];
+var db = mongojs.connect(databaseUrl, collections);
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
