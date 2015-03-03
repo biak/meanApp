@@ -9,6 +9,8 @@
     "multer": "^0.1.7",
     "node-twitter-api": "^1.5.0",
     "twit": "^1.1.19",
+    "express": "^4.11.1",
+    "npm": "^1.4.28",
     "twitter": "^1.2.1"
   },
   "devDependencies": {},
